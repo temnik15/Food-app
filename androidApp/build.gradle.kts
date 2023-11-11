@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("kotlin-parcelize")
+    id("kotlin-kapt")
 }
 
 android {
@@ -44,5 +46,19 @@ dependencies {
     implementation(libs.compose.ui.tooling.preview)
     implementation(libs.compose.material3)
     implementation(libs.androidx.activity.compose)
+
+    // app libs
+    implementation(libs.mvikotlin)
+    implementation(libs.mvikotlin.main)
+    implementation(libs.mvikotlin.timetravel)
+    implementation(libs.mvikotlin.extensions.coroutines)
+    implementation(libs.mvikotlin.essentity)
+    implementation(libs.androidx.fragment.ktx)
+    implementation(libs.accompanist.systemuicontroller)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+
+    implementation(libs.dagger)
+    kapt(libs.dagger.compiler)
+
     debugImplementation(libs.compose.ui.tooling)
 }

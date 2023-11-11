@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="auth_card_title">Авторизация</string>
+    <string name="auth_login_input_label">Email / Номер телефона</string>
+    <string name="auth_login_input_hint">Логин</string>
+    <string name="auth_password_input_label">Пароль</string>
+    <string name="auth_password_input_hint">Введите пароль</string>
+
+
+
+    <string name="auth_button_login">Вход</string>
+    <string name="auth_button_registration">Регистрация</string>
+
+    <string name="auth_ask_forgot_password">Забыли свой пароль?</string>
+    <string name="auth_continue_without_authorization">Продолжить без авторизации</string>
+</resources>
